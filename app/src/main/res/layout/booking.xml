@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".booking">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/bottom_navigation_menu"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/buttom_menu"
+        app:itemIconTint="@color/black"/>
+
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_navigation_menu"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logobar1" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="#380B0707"
+        android:drawablePadding="20dp"
+        android:hint="Masukkan Nama"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/utHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="#380B0707"
+        android:drawablePadding="20dp"
+        android:hint="Harga"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/button_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="Pilih Model"
+        android:textColor="@color/black"
+        style="?android:spinnerStyle"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:onclick="model"/>
+
+    <Button
+        android:id="@+id/button_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="Pilih Tanggal"
+        android:textColor="@color/black"
+        style="?android:spinnerStyle"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:onclick="tanggal"/>
+
+    <Button
+        android:id="@+id/button_jam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="Pilih Jam"
+        android:textColor="@color/black"
+        style="?android:spinnerStyle"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:onclick="Jam"/>
+
+    <Button
+        android:id="@+id/button_simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_center=""
+        android:layout_centerInparent="True"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="590dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:onclick="Booking"
+        android:padding="10dp"
+        android:text="Booking"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/etTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="#380B0707"
+        android:drawablePadding="20dp"
+        android:hint="Bukti Transfer"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black" />
+
+
+</RelativeLayout>
